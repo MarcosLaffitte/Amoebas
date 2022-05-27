@@ -218,7 +218,7 @@ print("* Plotting Graphs ...")
 
 # elegir una cantidad de graficas a dibujar
 if(len(graficas) >= totDibujar):
-    dibujarGraficas(graficas[:160], graficasFile)
+    dibujarGraficas(graficas[:totDibujar], graficasFile)
 else:
     dibujarGraficas(graficas, graficasFile)
 
