@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./Imagenes/C3.gif" width="215"/><img src="./Imagenes/RepoTitle.svg" width="350"/><img src="./Imagenes/P9.gif" width="215"/>
+  <img src="./6_Readme_Pics/C3.gif" width="215"/><img src="./6_Readme_Pics/RepoTitle.svg" width="350"/><img src="./6_Readme_Pics/P9.gif" width="215"/>
 </p>
 
 
