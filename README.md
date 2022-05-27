@@ -4,18 +4,10 @@
 
 
 
-- Lic. Marcos E. González Laffitte
-- Dra. Amanda Montejano Cantoral
 
-
-UNAM
-Institución
+- Lic. Marcos E. González Laffitte, IMATE - UNAM
+- Dra. Amanda Montejano Cantoral, UMDI - Facultad de Ciencias UNAM
 
 
 
-* Instrucciones:
-1. ...
-2. ...
-3. ...
-4. ...
-5. ...
+Instruction Manual to be uploaded soon :)
