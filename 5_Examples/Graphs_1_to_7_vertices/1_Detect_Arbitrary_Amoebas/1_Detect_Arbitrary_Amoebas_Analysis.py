@@ -4,7 +4,7 @@
 #                                                                              #
 #  - Hecho por: Lic. Marcos Emmanuel Gonzalez Laffitte                         #
 #  - Github: @MarcosLaffitte                                                   #
-#  - Repositiorio:  www...                                                     #
+#  - Repositiorio:  https://github.com/MarcosLaffitte/Amoebas                  #
 #  - Universidad Nacional Autonoma de Mexico (UNAM)                            #
 #  - Instituto de Matematicas (IMATE), Unidad Juriquilla                       #
 #  - Maestria en Ciencias Matematicas                                          #
