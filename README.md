@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./6_Readme_Pics/C3.gif" width="200"/><img src="./6_Readme_Pics/RepoTitle.svg" width="335"/><img src="./6_Readme_Pics/P4.gif" width="200"/>
+  <img src="./6_Readme_Pics/C3.gif" width="200"/><embed src="./6_Readme_Pics/RepoTitle.pdf" width="335"/><img src="./6_Readme_Pics/P4.gif" width="200"/>
 </p>
 
 
