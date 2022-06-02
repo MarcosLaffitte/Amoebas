@@ -102,6 +102,33 @@ Gg6 = Gg6 + "\n"
 graficasG6.append(Gg6)
 
 
+# graficas que dejan de ser amoebas locales al quitar reemplazos raros ---------
+Gg6 = "G?`cmW"
+Gg6 = Gg6 + "\n"
+graficasG6.append(Gg6)
+Gg6 = "G?qdrg"
+Gg6 = Gg6 + "\n"
+graficasG6.append(Gg6)
+Gg6 = "G?qmrk"
+Gg6 = Gg6 + "\n"
+graficasG6.append(Gg6)
+Gg6 = "GCpbvS"
+Gg6 = Gg6 + "\n"
+graficasG6.append(Gg6)
+Gg6 = "H?ABCfE"
+Gg6 = Gg6 + "\n"
+graficasG6.append(Gg6)
+Gg6 = "H?qadhi"
+Gg6 = Gg6 + "\n"
+graficasG6.append(Gg6)
+Gg6 = "HCQbUgy"
+Gg6 = Gg6 + "\n"
+graficasG6.append(Gg6)
+Gg6 = "HCQf@rK"
+Gg6 = Gg6 + "\n"
+graficasG6.append(Gg6)
+
+
 # C3 with short leg ------------------------------------------------------------
 G = nx.Graph()
 G.add_edge(1, 2)
