@@ -5,7 +5,7 @@
 
 
 
-## Developed by
+# Developed by
 
 - Lic. Marcos E. González Laffitte,
   IMATE - UNAM Campus Juriquilla
