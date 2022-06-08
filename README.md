@@ -2,25 +2,20 @@
   <img src="./6_Readme_Pics/C3.gif" width="180"/><img src="./6_Readme_Pics/RepoTitle.png" width="300"/><img src="./6_Readme_Pics/P4.gif" width="180"/>
 </p>
 
-
-
-
 ### Developed by
 
-- Lic. Marcos E. González Laffitte
-  IMATE - UNAM Campus Juriquilla
+- Lic. Marcos E. González Laffitte<\br/>
+  IMATE - UNAM Campus Juriquilla<\br/>
   marcoslaffitte@gmail.com
   
-- Dra. Amanda Montejano Cantoral
-  UMDI - Facultad de Ciencias - UNAM Campus Juriquila
+- Dra. Amanda Montejano Cantoral<\br/>
+  UMDI - Facultad de Ciencias - UNAM Campus Juriquila<\br/>
   amandamontejano@ciencias.unam.mx
 
-
+<\br/>
+<\br/>
 Instruction Manual to be uploaded soon :)
-
-
-
-
+<\br/>
 
 ### References
 
