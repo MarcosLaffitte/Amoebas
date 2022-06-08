@@ -5,10 +5,13 @@
 
 
 
-* Developed by
+## Developed by
 
-- Lic. Marcos E. González Laffitte, IMATE - UNAM
-- Dra. Amanda Montejano Cantoral, UMDI - Facultad de Ciencias - UNAM
+- Lic. Marcos E. González Laffitte,
+  IMATE - UNAM Campus Juriquilla
+  
+- Dra. Amanda Montejano Cantoral,
+  UMDI - Facultad de Ciencias - UNAM Campus Juriquila
 
 
 
