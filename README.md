@@ -5,6 +5,8 @@
 
 
 
+Developed by
+
 - Lic. Marcos E. González Laffitte, IMATE - UNAM
 - Dra. Amanda Montejano Cantoral, UMDI - Facultad de Ciencias - UNAM
 
