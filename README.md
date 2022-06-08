@@ -4,18 +4,18 @@
 
 ### Developed by
 
-- Lic. Marcos E. González Laffitte<\br/>
-  IMATE - UNAM Campus Juriquilla<\br/>
+- Lic. Marcos E. González Laffitte<br/>
+  IMATE - UNAM Campus Juriquilla<br/>
   marcoslaffitte@gmail.com
   
-- Dra. Amanda Montejano Cantoral<\br/>
-  UMDI - Facultad de Ciencias - UNAM Campus Juriquila<\br/>
+- Dra. Amanda Montejano Cantoral<br/>
+  UMDI - Facultad de Ciencias - UNAM Campus Juriquila<br/>
   amandamontejano@ciencias.unam.mx
 
-<\br/>
-<\br/>
+<br/>
+<br/>
 Instruction Manual to be uploaded soon :)
-<\br/>
+<br/>
 
 ### References
 
