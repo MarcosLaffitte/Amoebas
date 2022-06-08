@@ -13,7 +13,6 @@
   amandamontejano@ciencias.unam.mx
 
 <br/>
-<br/>
 Instruction Manual to be uploaded soon :)
 <br/>
 
