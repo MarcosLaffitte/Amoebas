@@ -4,6 +4,7 @@
   <img src="./6_Readme_Pics/C3.gif" width="180"/><img src="./6_Readme_Pics/RepoTitle.png" width="300"/><img src="./6_Readme_Pics/P4.gif" width="180"/>
 </p>
 
+
 ## Developed by
 
 - Lic. Marcos E. González Laffitte<br/>
@@ -14,9 +15,11 @@
   UMDI - Facultad de Ciencias - UNAM Campus Juriquila<br/>
   amandamontejano@ciencias.unam.mx
 
-<br/>
+
+## Instructions
+
 Instruction Manual to be uploaded soon :)
-<br/>
+
 
 ## References
 
