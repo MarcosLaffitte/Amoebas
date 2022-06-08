@@ -18,7 +18,7 @@
 
 ## Instructions
 
-Instruction Manual to be uploaded soon :)
+> Instruction Manual to be uploaded soon :)
 
 
 ## References
