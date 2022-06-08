@@ -21,7 +21,7 @@ Instruction Manual to be uploaded soon :)
 
 
 
-- References
+### References
 
 [1] Yair Caro, Adriana Hansberg, Amanda Montejano, “Graphs isomorphisms under edge-replacements and the family of amoebas,” p. 33, 2021.
 https://doi.org/10.48550/arXiv.2007.11769
