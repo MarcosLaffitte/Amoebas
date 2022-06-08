@@ -173,8 +173,8 @@ def aplicarReemplazo(someG, vr, vs, vk, vl):
     return(nuevaGrafica)
 
 
-# funcion: revisar las condiciones de Lilith sobre los grados ------------------
-def revisarCondicionesLilith(someG, vr, vs, vk, vl):
+# funcion: revisar las condiciones sobre los grados ----------------------------
+def revisarCondicionesDeGrados(someG, vr, vs, vk, vl):
     # variables locales
     condicion = False
     dr = 0
@@ -200,7 +200,7 @@ def revisarCondicionesLilith(someG, vr, vs, vk, vl):
     gradosNuevos.sort()
     # analizar caso  i)  |{r, s} n {k, l}| = 0    
     if(len({vr, vs}.intersection({vk, vl})) == 0):
-        # si {d(vk) + 1, d(vl) + 1} = {d(vr), d(vs)}, se mantienen las condiciones de Lilith
+        # si {d(vk) + 1, d(vl) + 1} = {d(vr), d(vs)}, se mantienen las condiciones de grados
         if(gradosOriginal == gradosNuevos):
             condicion = True
     # analizar caso  ii) |{r, s} n {k, l}| = 1
@@ -210,7 +210,7 @@ def revisarCondicionesLilith(someG, vr, vs, vk, vl):
         vb = list({vk, vl}.difference({conservado}))[0]
         da = someG.degree(va)
         db = someG.degree(vb)
-        # si d(vb) + 1 = d(va), se mantienen las condiciones de Lilith
+        # si d(vb) + 1 = d(va), se mantienen las condiciones de grados
         if(db + 1 == da):
             condicion = True
     # fin de funcion
@@ -260,7 +260,7 @@ def analizarAmoebasReemplazosRaros(G, numG, totalGraficas):
     s = 0
     k = 0
     l = 0
-    condicionesLilith = False    
+    condicionesGrados = False    
     graficaConReemplazo = None
     sonIsomorfas = False
     ordinario = False
@@ -299,10 +299,10 @@ def analizarAmoebasReemplazosRaros(G, numG, totalGraficas):
         for (k, l) in compAristas:
             # tiempo inicial para impresion de avance
             tiempoInicial = time.time()
-            # revisar condiciones de Lilith en GuK1 antes de realizar el reemplazo
-            condicionesLilith = revisarCondicionesLilith(GuK1, r, s, k, l)
-            # si se mantienen las condiciones de lilith, se continua con el reemplazo en GuK1
-            if(condicionesLilith):
+            # revisar condiciones de grados en GuK1 antes de realizar el reemplazo
+            condicionesGrados = revisarCondicionesDeGrados(GuK1, r, s, k, l)
+            # si se mantienen las condiciones de grados, se continua con el reemplazo en GuK1
+            if(condicionesGrados):
                 # realizar reemplazo sobre GuK1 para obtener GuK1-rs+kl
                 graficaConReemplazo = aplicarReemplazo(GuK1, r, s, k, l)        
                 # revisar si GuK1-rs+kl es isomorfa a GuK1

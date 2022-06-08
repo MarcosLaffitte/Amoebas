@@ -166,8 +166,8 @@ def aplicarReemplazo(someG, vr, vs, vk, vl):
     return(nuevaGrafica)
 
 
-# funcion: revisar las condiciones de Lilith sobre los grados ------------------
-def revisarCondicionesLilith(someG, vr, vs, vk, vl):
+# funcion: revisar las condiciones sobre los grados ----------------------------
+def revisarCondicionesDeGrados(someG, vr, vs, vk, vl):
     # variables locales
     condicion = False
     dr = 0
@@ -193,7 +193,7 @@ def revisarCondicionesLilith(someG, vr, vs, vk, vl):
     gradosNuevos.sort()
     # analizar caso  i)  |{r, s} n {k, l}| = 0    
     if(len({vr, vs}.intersection({vk, vl})) == 0):
-        # si {d(vk) + 1, d(vl) + 1} = {d(vr), d(vs)}, se mantienen las condiciones de Lilith
+        # si {d(vk) + 1, d(vl) + 1} = {d(vr), d(vs)}, se mantienen las condiciones de grados
         if(gradosOriginal == gradosNuevos):
             condicion = True
     # analizar caso  ii) |{r, s} n {k, l}| = 1
@@ -203,7 +203,7 @@ def revisarCondicionesLilith(someG, vr, vs, vk, vl):
         vb = list({vk, vl}.difference({conservado}))[0]
         da = someG.degree(va)
         db = someG.degree(vb)
-        # si d(vb) + 1 = d(va), se mantienen las condiciones de Lilith
+        # si d(vb) + 1 = d(va), se mantienen las condiciones de grados
         if(db + 1 == da):
             condicion = True
     # fin de funcion
@@ -249,7 +249,7 @@ def analizarAmoebasArbol(G, numG, totalGraficas):
     s = 0
     k = 0
     l = 0
-    condicionesLilith = False    
+    condicionesGrados = False    
     graficaConReemplazo = None
     sonIsomorfas = False
     grados = []
@@ -289,15 +289,16 @@ def analizarAmoebasArbol(G, numG, totalGraficas):
         # tiempo inicial para impresion de avance
         tiempoInicial = time.time()
         for (k, l) in aristasCompComp:
-            # revisar condiciones de Lilith en G antes de realizar el reemplazo
-            condicionesLilith = revisarCondicionesLilith(G, r, s, k, l)
-            # si se mantienen las condiciones de lilith, se continua con el reemplazo en G
-            if(condicionesLilith):
+            # revisar condiciones de grados en G antes de realizar el reemplazo
+            condicionesGrados = revisarCondicionesDeGrados(G, r, s, k, l)
+            # si se mantienen las condiciones de grados, se continua con el reemplazo en G
+            if(condicionesGrados):
                 # realizar reemplazo sobre G para obtener G-rs+kl
                 graficaConReemplazo = aplicarReemplazo(G, r, s, k, l)        
-                # revisar si G-rs+kl es isomorfa a G
+                # revisar si G-rs+kl es isomorfa a G; la funcion devueleve una lista vacia si no son isomorfas
                 sonIsomorfas = isomorphism.tree_isomorphism(graficaConReemplazo, G)
                 # si son isomorfas, entonces calcular y guardar isomorfismos tanto locales como globales
+                # *nota: esta es una sintaxis valida para revisar si una lista es vacia en python
                 if(sonIsomorfas):
                     # obtener permutaciones locales
                     permutacionesLocales = permutacionesLocales + obtenerIsomorfismos(graficaConReemplazo, G)
@@ -323,10 +324,10 @@ def analizarAmoebasArbol(G, numG, totalGraficas):
         for (k, l) in aristasExteriores:
             # tiempo inicial para impresion de avance
             tiempoInicial = time.time()
-            # revisar condiciones de Lilith en GuK1 antes de realizar el reemplazo
-            condicionesLilith = revisarCondicionesLilith(GuK1, r, s, k, l)
-            # si se mantienen las condiciones de lilith, se continua con el reemplazo en GuK1
-            if(condicionesLilith):
+            # revisar condiciones de grados en GuK1 antes de realizar el reemplazo
+            condicionesGrados = revisarCondicionesDeGrados(GuK1, r, s, k, l)
+            # si se mantienen las condiciones de grados, se continua con el reemplazo en GuK1
+            if(condicionesGrados):
                 # realizar reemplazo sobre GuK1 para obtener GuK1-rs+kl
                 graficaConReemplazo = aplicarReemplazo(GuK1, r, s, k, l)
                 # por onstruccion sabemos que k es el nuevo vertice n
@@ -334,12 +335,14 @@ def analizarAmoebasArbol(G, numG, totalGraficas):
                     # obtener permutaciones globales
                     permutacionesGlobales = permutacionesGlobales + obtenerIsomorfismos(graficaConReemplazo, GuK1)
                 else:                
-                    # remover el unico vertice aislado de GuK1-rs+kl (garantizado por las condiciones de Lilith)
+                    # remover el unico vertice aislado de GuK1-rs+kl (garantizado por las condiciones de grados)
                     aislado = [v for v in list(graficaConReemplazo.nodes()) if graficaConReemplazo.degree(v) == 0][0]
                     graficaConReemplazo.remove_node(aislado)
                     # revisar si la "componente arbol" de GuK1-rs+kl es isomorfa a la "componente arbol", i.e. G, de GuK1
+                    # la funcion devueleve una lista vacia si no son isomorfas
                     sonIsomorfas = isomorphism.tree_isomorphism(graficaConReemplazo, G)
                     # si son isomorfas, entonces calcular y guardar isomorfismos globales
+                    # *nota: esta es una sintaxis valida para revisar si una lista es vacia en python
                     if(sonIsomorfas):
                         # agregar nuevamente vertice aislado
                         graficaConReemplazo.add_node(aislado)
