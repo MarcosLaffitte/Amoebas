@@ -36,10 +36,10 @@ http://132.248.9.195/ptd2021/junio/0812763/Index.html
 [3] Combinatorial Data - Prof. Brendan D. McKay, School of Computing, Australian National University,
 https://users.cecs.anu.edu.au/~bdm/data/.
 
-[4] Graphs Page - Prof. Brendan D. McKay, School of Computing, Australian National University,
+[4] Graphs having from 1 to 10 vertices where obtained from: Graphs Page - Prof. Brendan D. McKay, School of Computing, Australian National University,
 https://users.cecs.anu.edu.au/~bdm/data/graphs.html.
 
-[5] Trees Page - Prof. Brendan D. McKay, School of Computing, Australian National University,
+[5] Trees having from 1 to 22 vertices where obtained from: Trees Page - Prof. Brendan D. McKay, School of Computing, Australian National University,
 https://users.cecs.anu.edu.au/~bdm/data/trees.html.
 
 [6] Definition of graph6 encoding - Prof. Brendan D. McKay, School of Computing, Australian National University,
