@@ -31,7 +31,7 @@ https://doi.org/10.48550/arXiv.2007.11769
 [2] Jennifer Lilith Espinosa Hernández, “Gráficas Inevitables en 2-coloraciones de la Gráfica Completa: El Caso de las Amoebas,” Tesis de Licenciatura en Matemáticas, UNAM. Directora de Tesis: Dra. Adriana Hansberg Pastor, p. 79, 2021.<br/>
 http://132.248.9.195/ptd2021/junio/0812763/Index.html
 
-#### Graphs and Trees database - Last cheked on: June 10th, 2022
+#### Graphs and Trees database - Last visited on: June 10th, 2022
 
 [3] Main page: Combinatorial Data - Prof. Brendan D. McKay, School of Computing, Australian National University.<br/>
 https://users.cecs.anu.edu.au/~bdm/data/
