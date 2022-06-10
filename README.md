@@ -36,7 +36,7 @@ http://132.248.9.195/ptd2021/junio/0812763/Index.html
 [3] Combinatorial Data - Prof. Brendan D. McKay, School of Computing, Australian National University.<br/>
 https://users.cecs.anu.edu.au/~bdm/data/
 
-[4] Graphs having from 1 to 10 vertices where obtained from: Graphs Page - Prof. Brendan D. McKay, School of Computing, Australian National University.<br/>
+[4] Simple Graphs having from 1 to 10 vertices where obtained from: Graphs Page - Prof. Brendan D. McKay, School of Computing, Australian National University.<br/>
 https://users.cecs.anu.edu.au/~bdm/data/graphs.html
 
 [5] Trees having from 1 to 22 vertices where obtained from: Trees Page - Prof. Brendan D. McKay, School of Computing, Australian National University.<br/>
