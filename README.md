@@ -18,7 +18,8 @@
 
 ## About
 
-Developed as part of the work of Marcos E. González Laffitte's Master Thesis in Mathematics, UNAM, IMATE
+Amoebas are simple graphs able to move around or roll over themselves only by using edge-replacements !!!<br/>
+All of the programs here can be used to detect amoebas and analyze their properties. This repository was developed as part of the work of Marcos E. González Laffitte's Master Thesis in Mathematics, UNAM, IMATE
 
 
 ## Instructions
