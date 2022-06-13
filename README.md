@@ -16,6 +16,11 @@
   amandamontejano@ciencias.unam.mx
 
 
+## About
+
+Developed as part of the work of Marcos E. González Laffitte's Master Thesis in Mathematics, UNAM, IMATE
+
+
 ## Instructions
 
 > Instruction Manual to be uploaded soon :)
