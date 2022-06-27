@@ -1,6 +1,6 @@
 ################################################################################
 #                                                                              #
-#  README - Programa: 1_Detector_Amoebas_Arbitrarias_Analisis.py               #
+#  README - Programa: Detect_Arbitrary_Amoebas_Analysis.py                     #
 #                                                                              #
 #  - Hecho por: Lic. Marcos Emmanuel Gonzalez Laffitte                         #
 #  - Github: @MarcosLaffitte                                                   #
@@ -15,17 +15,17 @@
 #            Deteccion Computacional de esta Familia de Graficas               #
 #                    y el Caso de los Reemplazos Raros"                        #
 #                                                                              #
-#  - Tesis UNAM:  www...                                                       #
+#  - Tesis UNAM:  [url pendiente]                                              #
 #  - Descripcion: recibe una lista de graficas arbitrarias simples no nulas y  #
 #    determina las amoebas y no amoebas.                                       #
 #  - Input: Lista de graficas   [Archivo*.g6]   en formato graph6 o g6         #
 #  - Output: cuatro archivos                                                   #
-#            1) [Archivo*]_graficas_LA.pkl         (solo LA)                   #
-#            2) [Archivo*]_graficas_GA.pkl         (solo GA)                   #
-#            3) [Archivo*]_graficas_LAnGA.pkl      (LA y GA)                   #
-#            4) [Archivo*]_graficas_No_Amoeba.pkl  (graficas no amoebas)       #
+#            1) [Archivo*]_graphs_LA.pkl         (solo LA)                     #
+#            2) [Archivo*]_graphs_GA.pkl         (solo GA)                     #
+#            3) [Archivo*]_graphs_LAnGA.pkl      (LA y GA)                     #
+#            4) [Archivo*]_graphs_No_Amoeba.pkl  (graficas no amoebas)         #
 #  - Ejecutar como:                                                            #
-#      python3.7  1_Detector_Amoebas_Arbitrarias_Analisis.py  [Archivo*.g6]    #
+#      python3.7  Detect_Arbitrary_Amoebas_Analysis.py  [Archivo*.g6]          #
 #                                                                              #
 #  - Fecha: 22 de abril 2022                                                   #
 #                                                                              #

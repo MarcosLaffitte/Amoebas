@@ -18,7 +18,7 @@
 
 ## About
 
-All of the programs here can be used to detect amoebas and analyze their properties. This repository was developed as part of the work of Marcos E. González Laffitte's Master Thesis in Mathematics under supervision of Dra. Amanda Montejano Cantoral.
+All the programs here can be used to detect amoebas and analyze their properties. This repository was developed as part of the work of Marcos E. González Laffitte's Master Thesis in Mathematics under supervision of Dra. Amanda Montejano Cantoral.
 
 
 ## Instructions

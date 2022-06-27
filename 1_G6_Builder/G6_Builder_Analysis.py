@@ -1,6 +1,6 @@
 ################################################################################
 #                                                                              #
-#  README - Programa: 0_Creador_G6_Analisis.py                                 #
+#  README - Programa: G6_Builder_Analysis.py                                   #
 #                                                                              #
 #  - Hecho por: Lic. Marcos Emmanuel Gonzalez Laffitte                         #
 #  - Github: @MarcosLaffitte                                                   #
@@ -15,7 +15,7 @@
 #            Deteccion Computacional de esta Familia de Graficas               #
 #                    y el Caso de los Reemplazos Raros"                        #
 #                                                                              #
-#  - Tesis UNAM:  www...                                                       #
+#  - Tesis UNAM:  [url pendiente]                                              #
 #  - Descripcion: crea una lista de cadenas G6 que representan graficas        #
 #    simples en dhico formato.                                                 #
 #  - Input: Definido por el usuario dentro del programa. Se pueden agregar     #
@@ -24,7 +24,7 @@
 #  - Output: un archivo de texto plano *.g6, con cadenas G6 cuyo nombre es     #
 #    es determinado por el usuario mas abajo.                                  #
 #  - Ejecutar como:                                                            #
-#                   python3.7  0_Creador_G6_Analisis.py                        #
+#                   python3.7  G6_Builder_Analysis.py                          #
 #                                                                              #
 #  - Fecha: 22 de abril 2022                                                   #
 #                                                                              #
@@ -84,6 +84,64 @@ print("\n")
 print(">>> Builder of Graphs in G6 Format - [@MarcosLaffitte - Github Repo - Amoebas]")
 
 
+# agregar P4 (con numeracion como en la tesis) ---------------------------------
+G = nx.Graph()
+G.add_edge(4, 1)
+G.add_edge(1, 2)
+G.add_edge(2, 3)
+someBytes = nx.to_graph6_bytes(G, header = False)
+someString = someBytes.decode()
+graficasG6.append(someString)
+
+
+# agregar ciclos C3, C4, C5, C6 y C7 -------------------------------------------
+G = nx.Graph()
+G.add_edge(1, 2)
+G.add_edge(2, 3)
+G.add_edge(3, 1)
+someBytes = nx.to_graph6_bytes(G, header = False)
+someString = someBytes.decode()
+graficasG6.append(someString)
+G = nx.Graph()
+G.add_edge(1, 2)
+G.add_edge(2, 3)
+G.add_edge(3, 4)
+G.add_edge(4, 1)
+someBytes = nx.to_graph6_bytes(G, header = False)
+someString = someBytes.decode()
+graficasG6.append(someString)
+G = nx.Graph()
+G.add_edge(1, 2)
+G.add_edge(2, 3)
+G.add_edge(3, 4)
+G.add_edge(4, 5)
+G.add_edge(5, 1)
+someBytes = nx.to_graph6_bytes(G, header = False)
+someString = someBytes.decode()
+graficasG6.append(someString)
+G = nx.Graph()
+G.add_edge(1, 2)
+G.add_edge(2, 3)
+G.add_edge(3, 4)
+G.add_edge(4, 5)
+G.add_edge(5, 6)
+G.add_edge(6, 1)
+someBytes = nx.to_graph6_bytes(G, header = False)
+someString = someBytes.decode()
+graficasG6.append(someString)
+G = nx.Graph()
+G.add_edge(1, 2)
+G.add_edge(2, 3)
+G.add_edge(3, 4)
+G.add_edge(4, 5)
+G.add_edge(5, 6)
+G.add_edge(6, 7)
+G.add_edge(7, 1)
+someBytes = nx.to_graph6_bytes(G, header = False)
+someString = someBytes.decode()
+graficasG6.append(someString)
+
+
 # Ejemplo de como agregar graficas en G6 - Grafica Rara no amoeba --------------
 Gg6 = "G?Bev_"
 Gg6 = Gg6 + "\n"
@@ -102,10 +160,28 @@ Gg6 = Gg6 + "\n"
 graficasG6.append(Gg6)
 
 
-# graficas que dejan de ser amoebas locales al quitar reemplazos raros ---------
+# locales no globales que dejan de ser amoebas al quitar reemplazos y GuK1'a ---
 Gg6 = "G?`cmW"
+GuK1 = nx.from_graph6_bytes(Gg6.encode())
 Gg6 = Gg6 + "\n"
 graficasG6.append(Gg6)
+n = GuK1.order()
+GuK1.add_node(n)
+someBytes = nx.to_graph6_bytes(GuK1, header = False)
+someString = someBytes.decode()
+graficasG6.append(someString)
+Gg6 = "HCQf@rK"
+GuK1 = nx.from_graph6_bytes(Gg6.encode())
+Gg6 = Gg6 + "\n"
+graficasG6.append(Gg6)
+n = GuK1.order()
+GuK1.add_node(n)
+someBytes = nx.to_graph6_bytes(GuK1, header = False)
+someString = someBytes.decode()
+graficasG6.append(someString)
+
+
+# mas graficas que dejan de ser amoebas locales al quitar reemplazos raros -----
 Gg6 = "G?qdrg"
 Gg6 = Gg6 + "\n"
 graficasG6.append(Gg6)
@@ -124,9 +200,6 @@ graficasG6.append(Gg6)
 Gg6 = "HCQbUgy"
 Gg6 = Gg6 + "\n"
 graficasG6.append(Gg6)
-Gg6 = "HCQf@rK"
-Gg6 = Gg6 + "\n"
-graficasG6.append(Gg6)
 
 
 # C3 with short leg ------------------------------------------------------------
@@ -135,16 +208,6 @@ G.add_edge(1, 2)
 G.add_edge(2, 3)
 G.add_edge(3, 1)
 G.add_edge(3, 4)
-someBytes = nx.to_graph6_bytes(G, header = False)
-someString = someBytes.decode()
-graficasG6.append(someString)
-
-
-# P4 ---------------------------------------------------------------------------
-G = nx.Graph()
-G.add_edge(4, 1)
-G.add_edge(1, 2)
-G.add_edge(2, 3)
 someBytes = nx.to_graph6_bytes(G, header = False)
 someString = someBytes.decode()
 graficasG6.append(someString)

@@ -1,6 +1,6 @@
 ################################################################################
 #                                                                              #
-#  README - Programa: 2_Detector_Amoebas_Arbol_Visualizacion.py                #
+#  README - Programa: Detect_Tree_Amoebas_Visualization.py                     #
 #                                                                              #
 #  - Hecho por: Lic. Marcos Emmanuel Gonzalez Laffitte                         #
 #  - Github: @MarcosLaffitte                                                   #
@@ -15,22 +15,22 @@
 #            Deteccion Computacional de esta Familia de Graficas               #
 #                    y el Caso de los Reemplazos Raros"                        #
 #                                                                              #
-#  - Tesis UNAM:  www...                                                       #
+#  - Tesis UNAM:  [url pendiente]                                              #
 #  - Descripcion: recibe los 3 archivos de arboles amoeba y no amoeba          #
-#    producidos por 2_Detector_Amoebas_Arbol_Analisis.py, y genera (a lo mas)  #
+#    producidos por Detect_Tree_Amoebas_Analysis.py, y genera (a lo mas)       #
 #    3 archivos con dibujos de todos los arboles dados.                        #
 #  - Input:  3 archivos [Archivo*]_arboles_[GA/LAnGA/No_Amoeba].pkl            #
 #  - Output: tres archivos pdfs con los dibujos de los arboles dados,          #
-#            1) [Archivo*]_arboles_GA.pdf         (solo GA)                    #
-#            2) [Archivo*]_arboles_LAnGA.pdf      (LA y GA)                    #
-#            3) [Archivo*]_arboles_No_Amoeba.pdf  (graficas no amoebas)        #
+#            1) [Archivo*]_trees_GA.pdf         (solo GA)                      #
+#            2) [Archivo*]_trees_LAnGA.pdf      (LA y GA)                      #
+#            3) [Archivo*]_trees_No_Amoeba.pdf  (graficas no amoebas)          #
 #  - Ejecutar como:                                                            #
-#       python3.7  2_Detector_Amoebas_Arbol_Visualizacion.py  *.pkl            #
+#       python3.7  Detect_Tree_Amoebas_Visualization.py  *.pkl                 #
 #                                                                              #
 #  * en linea de comandos literalmente poner "*.pkl" y python toma todo *.pkl  #
 #  * poniendo solo los 2 archivos *.pkl en la misma carpeta que este script.   #
 #  * los 3 archivos *.pkl deben estar nombrados con el formato de Output de    #
-#    2_Detector_Amoebas_Arbol_Analisis.py, de otra forma no se                 #
+#    Detect_Tree_Amoebas_Analysis.py, de otra forma no se                      #
 #    ejecuta el programa.                                                      #
 #                                                                              #
 #  - Fecha: 26 de abril 2022                                                   #

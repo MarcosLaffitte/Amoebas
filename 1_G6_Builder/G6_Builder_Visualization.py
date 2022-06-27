@@ -1,6 +1,6 @@
 ################################################################################
 #                                                                              #
-#  README - Programa: 0_Creador_G6_Visualizacion.py                            #
+#  README - Programa: G6_Builder_Visualization.py                              #
 #                                                                              #
 #  - Hecho por: Lic. Marcos Emmanuel Gonzalez Laffitte                         #
 #  - Github: @MarcosLaffitte                                                   #
@@ -15,14 +15,14 @@
 #            Deteccion Computacional de esta Familia de Graficas               #
 #                    y el Caso de los Reemplazos Raros"                        #
 #                                                                              #
-#  - Tesis UNAM:  www...                                                       #
+#  - Tesis UNAM:  [url pendiente]                                              #
 #  - Descripcion: recibe una lista de graficas en formato G6 y regresa         #
 #    un pdf con los dibujos de todas las graficas dadas.                       #
 #  - Input: archivo con terminacion *.g6, es decir [archivo*].g6               #
 #  - Output: pdf con dibujos de las graficas, con un total de graficas         #
 #    definido por el usuario mas abajo. Default 1600 graficas.                 #
 #  - Ejecutar como:                                                            #
-#         python3.7  0_Creador_G6_Visualizacion.py  [archivo*].g6              #
+#         python3.7  G6_Builder_Visualization.py  [archivo*].g6                #
 #                                                                              #
 #  - Fecha: 22 de abril 2022                                                   #
 #                                                                              #

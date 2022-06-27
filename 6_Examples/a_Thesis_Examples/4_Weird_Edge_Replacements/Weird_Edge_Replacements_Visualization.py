@@ -1,6 +1,6 @@
 ################################################################################
 #                                                                              #
-#  README - Programa: 3_Reemplazos_Raros_Visualizacion.py                      #
+#  README - Programa: Weird_Edge_Replacements_Visualization.py                 #
 #                                                                              #
 #  - Hecho por: Lic. Marcos Emmanuel Gonzalez Laffitte                         #
 #  - Github: @MarcosLaffitte                                                   #
@@ -15,25 +15,27 @@
 #            Deteccion Computacional de esta Familia de Graficas               #
 #                    y el Caso de los Reemplazos Raros"                        #
 #                                                                              #
-#  - Tesis UNAM:  www...                                                       #
+#  - Tesis UNAM:  [url pendiente]                                              #
 #  - Descripcion: recibe los 4 archivos de amoebas y graficas producidos por   #
-#    3_Reemplazos_Raros_Analisis.py, y genera (a lo mas) cuatro archivos       #
+#    Weird_Edge_Replacements_Analysis.py, y genera (a lo mas) cuatro archivos  #
 #    con dibujos de todas las graficas dadas.                                  #
 #  - Input:  4 archivos [Archivo*]_[Amoebas/Graficas]_[Raras/Ordinarias].pkl   #
 #  - Output: cuatro archivos pdfs con los dibujos de las graficas dadas,       #
-#            1) [Archivo*]_Amoebas_Raras.pdf        (LA, GA, LAnGA)            #
-#            2) [Archivo*]_Graficas_Raras.pdf       (no amoebas)               #
-#            3) [Archivo*]_Amoebas_Ordinarias.pdf   (LA, GA, LAnGA)            #
-#            4) [Archivo*]_Graficas_Ordinarias.pdf  (no amoebas)               #
+#            1) [Archivo*]_Weird_Amoebas.pdf      (LA, GA, LAnGA)              #
+#            2) [Archivo*]_Weird_Graphs.pdf       (no amoebas)                 #
+#            3) [Archivo*]_Ordinary_Amoebas.pdf   (LA, GA, LAnGA)              #
+#            4) [Archivo*]_Ordinary_Graphs.pdf    (no amoebas)                 #
 #  - Ejecutar como:                                                            #
-#          python3.7  3_Reemplazos_Raros_Visualizacion.py  *.pkl               #
+#          python3.7  Weird_Edge_Replacements_Visualization.py  *.pkl          #
 #                                                                              #
 #  * en linea de comandos literalmente poner "*.pkl" y python toma todo *.pkl  #
 #  * poniendo solo los 4 archivos *.pkl en la misma carpeta que este script.   #
 #  * los 4 archivos *.pkl deben estar nombrados con el formato de Output de    #
-#    3_Reemplazos_Raros_Analisis.py, de otra forma no se ejecuta el programa.  #
+#    Weird_Edge_Replacements_Analysis.py, de otra forma no se ejecuta          #
+#    el programa.                                                              #
 #                                                                              #
 #  - Fecha: 26 de abril 2022                                                   #
+#                                                                              #
 #  * las variables se nombran con formato estilo java                          #
 #                                                                              #
 ################################################################################

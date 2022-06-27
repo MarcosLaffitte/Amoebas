@@ -1,6 +1,6 @@
 ################################################################################
 #                                                                              #
-#  README - Programa: 4_Estructura_SG_Analisis.py                              #
+#  README - Programa: Group_SG_Structure_Analysis.py                           #
 #                                                                              #
 #  - Hecho por: Lic. Marcos Emmanuel Gonzalez Laffitte                         #
 #  - Github: @MarcosLaffitte                                                   #
@@ -15,7 +15,7 @@
 #            Deteccion Computacional de esta Familia de Graficas               #
 #                    y el Caso de los Reemplazos Raros"                        #
 #                                                                              #
-#  - Tesis UNAM:  www...                                                       #
+#  - Tesis UNAM:  [url pendiente]                                              #
 #  - Descripcion: recibe una lista de graficas arbitrarias simples no nulas y  #
 #    determina las amoebas y no amoebas, junto con la estructura de los grupos #
 #    S_G y S_GuK1 de cada grafica G en la lista por medio de SageMath.         #
@@ -24,16 +24,16 @@
 #    primero reemplazos raros y luego solo a los ordinarios.                   #
 #  - Input: Lista de graficas   [Archivo*.g6]   en formato graph6 o g6         #
 #  - Output: cuatro archivos                                                   #
-#            1) [Archivo*]_grupoSG_LA.pkl         (solo LA)                    #
-#            2) [Archivo*]_grupoSG_GA.pkl         (solo GA)                    #
-#            3) [Archivo*]_grupoSG_LAnGA.pkl      (LA y GA)                    #
-#            4) [Archivo*]_grupoSG_No_Amoeba.pkl  (graficas no amoebas)        #
+#            1) [Archivo*]_groupSG_LA.pkl         (solo LA)                    #
+#            2) [Archivo*]_groupSG_GA.pkl         (solo GA)                    #
+#            3) [Archivo*]_groupSG_LAnGA.pkl      (LA y GA)                    #
+#            4) [Archivo*]_groupSG_No_Amoeba.pkl  (graficas no amoebas)        #
 #  - Ejecutar como:                                                            #
-#        python3.7  4_Estructura_SG_Analisis.py  [Archivo*.g6]                 #
+#        python3.7  Group_SG_Structure_Analysis.py  [Archivo*.g6]              #
 #                                                                              #
 #                o tambien con el python de sage como                          #
 #                                                                              #
-#        sage  -python   4_Estructura_SG_Analisis.py  [Archivo*.g6]            #
+#        sage  -python   Group_SG_Structure_Analysis.py  [Archivo*.g6]         #
 #                                                                              #
 #  - Fecha: 22 de abril 2022                                                   #
 #                                                                              #
@@ -97,11 +97,12 @@ graficasNoAmoebaFile = inFileName.split(".")[0] + "_groupSG_Not_Amoeba.pkl"
 
 
 # datos ------------------------------------------------------------------------
-resultado = ()     # (nombreG6, orden, tamano, familia, tipo, estructuras)
+resultado = ()     # (nombreG6, orden, tamano, familia, tipoG, tipoGuK1, estructuras)
 orden = 0          # cantidad de vertices
 tamano = 0         # cantidad de aristas
 familia = ""       # solo "LA", solo "GA", "LAnGA", no amoeba "NO"
-tipo = ""          # rara "Weird" u ordinaria "Ordinary"
+tipoG = ""         # rara "G [Weird]" u ordinaria "G [Ordinary]"
+tipoGuK1 = ""      # rara "GuK1 [Weird]" u ordinaria "GuK1 [Ordinary]"
 estructuras = []   # estructuras = [estSG, estSGRaro, estSGOrd, estSGuK1, estSGuK1Raro, estSGuK1Ord]
 # descripcion: estSG = ""         # e.g. S_n, C_n, A_n, ...
 # descripcion: estSGRaro = ""     # SG generado sin reemplazos raros
@@ -287,12 +288,15 @@ def analizarAmoebasEstructuraDeGrupos(G, numG, totalGraficas):
     graficaConReemplazo = None
     sonIsomorfas = False
     ordinario = False
-    graficaRara = False
     familiaG = ""
     avance = 0
     porcentaje = 0
     tiempoInicial = 0
     tiempoFinal = 0
+    GesRara = False
+    GuK1esRara = False
+    strRaraG = ""
+    strRaraGuK1 = ""
     ############################## ETAPA 1 ##############################
     # obtener n y nMasUno para dar nombre "n+1" a nuevo vertice aislado
     n = G.order()
@@ -330,7 +334,7 @@ def analizarAmoebasEstructuraDeGrupos(G, numG, totalGraficas):
                         permutacionesGlobalesOrds = permutacionesGlobalesOrds + obtenerIsomorfismos(graficaConReemplazo, GuK1)
                     else:
                         permutacionesGlobalesRaras = permutacionesGlobalesRaras + obtenerIsomorfismos(graficaConReemplazo, GuK1)
-                        graficaRara = True
+                        GuK1esRara = True
                     # si ademas k y l NO son el vertice nuevo n+1, continuar con el reemplazo en G
                     if(not (nMasUno in (k, l))):
                         # realizar reemplazo sobre G para obtener G-rs+kl
@@ -340,6 +344,7 @@ def analizarAmoebasEstructuraDeGrupos(G, numG, totalGraficas):
                             permutacionesLocalesOrds = permutacionesLocalesOrds + obtenerIsomorfismos(graficaConReemplazo, G)
                         else:
                             permutacionesLocalesRaras = permutacionesLocalesRaras + obtenerIsomorfismos(graficaConReemplazo, G)
+                            GesRara = True
             # tiempo final para impresion de avance e imprimir porcentaje de avance del analisis
             avance = avance + 1
             porcentaje = round((avance*100)/(len(aristasG)*len(compAristas)), 2)
@@ -349,21 +354,21 @@ def analizarAmoebasEstructuraDeGrupos(G, numG, totalGraficas):
     ############################## ETAPA 3 ##############################
     # analizar grupos generados y sus estructuras
     grupoGeneradoLocal = PermutationGroup(permutacionesLocalesOrds + permutacionesLocalesRaras)
-    estructuraGrupoLocal = grupoGeneradoLocal.structure_description()    
-    if(graficaRara):
+    estructuraGrupoLocal = grupoGeneradoLocal.structure_description(latex = True)    
+    if(GesRara or GuK1esRara):
         grupoGeneradoLocalRaro = PermutationGroup(permutacionesLocalesRaras)
-        estructuraGrupoLocalRaro = grupoGeneradoLocalRaro.structure_description()
+        estructuraGrupoLocalRaro = grupoGeneradoLocalRaro.structure_description(latex = True)
         grupoGeneradoLocalOrd = PermutationGroup(permutacionesLocalesOrds)
-        estructuraGrupoLocalOrd = grupoGeneradoLocalOrd.structure_description()    
+        estructuraGrupoLocalOrd = grupoGeneradoLocalOrd.structure_description(latex = True)    
     if(grupoGeneradoLocal.order() == factorial(n)):
         esLA = True
     grupoGeneradoGlobal = PermutationGroup(permutacionesGlobalesOrds + permutacionesGlobalesRaras)
-    estructuraGrupoGlobal = grupoGeneradoGlobal.structure_description()            
-    if(graficaRara):        
+    estructuraGrupoGlobal = grupoGeneradoGlobal.structure_description(latex = True) 
+    if(GesRara or GuK1esRara):        
         grupoGeneradoGlobalRaro = PermutationGroup(permutacionesGlobalesRaras)
-        estructuraGrupoGlobalRaro = grupoGeneradoGlobalRaro.structure_description()
+        estructuraGrupoGlobalRaro = grupoGeneradoGlobalRaro.structure_description(latex = True)
         grupoGeneradoGlobalOrd = PermutationGroup(permutacionesGlobalesOrds)
-        estructuraGrupoGlobalOrd = grupoGeneradoGlobalOrd.structure_description()
+        estructuraGrupoGlobalOrd = grupoGeneradoGlobalOrd.structure_description(latex = True)
     if(grupoGeneradoGlobal.order() == factorial(nMasUno)):
         esGA = True                
     # determinar familia
@@ -375,13 +380,22 @@ def analizarAmoebasEstructuraDeGrupos(G, numG, totalGraficas):
         familiaG = "GA"
     if((not esLA) and (not esGA)):
         familiaG = "NO"
-    # fin de funcion
-    if(graficaRara):
-        return(familiaG, "Weird",
+    # determinar respuesta de reemplazos raros
+    if(GesRara):
+        strRaraG = "$G$ [Weird]"
+    else:
+        strRaraG = "$G$ [Ordinary]"
+    if(GuK1esRara):
+        strRaraGuK1 = "$G{\cup}K_1$ [Weird]"
+    else:
+        strRaraGuK1 = "$G{\cup}K_1$ [Ordinary]"
+    # fin de funcion    
+    if(GesRara or GuK1esRara):
+        return(familiaG, strRaraG, strRaraGuK1,
                [estructuraGrupoLocal, estructuraGrupoLocalRaro, estructuraGrupoLocalOrd,
                estructuraGrupoGlobal, estructuraGrupoGlobalRaro, estructuraGrupoGlobalOrd])
     else:
-        return(familiaG, "Ordinary",
+        return(familiaG, strRaraG, strRaraGuK1,
                [estructuraGrupoLocal, "-", "-",
                estructuraGrupoGlobal, "-", "-"])        
 
@@ -416,9 +430,9 @@ for indice in range(totalGraficas):
     orden = eachGraph.order()
     tamano = eachGraph.size()    
     # analizar grafica
-    (familia, tipo, estructuras) = analizarAmoebasEstructuraDeGrupos(eachGraph, indice+1, totalGraficas)
+    (familia, tipoG, tipoGuK1, estructuras) = analizarAmoebasEstructuraDeGrupos(eachGraph, indice+1, totalGraficas)
     # guardar grafica en su lista correspondiente    
-    resultado = (eachG6, orden, tamano, familia, tipo, estructuras)
+    resultado = (eachG6, orden, tamano, familia, tipoG, tipoGuK1, estructuras)
     if(familia == "LA"):
         amoebasLA.append(resultado)
     if(familia == "GA"):

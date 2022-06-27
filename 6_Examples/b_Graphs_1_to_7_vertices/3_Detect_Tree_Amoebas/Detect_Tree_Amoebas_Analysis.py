@@ -1,6 +1,6 @@
 ################################################################################
 #                                                                              #
-#  README - Programa: 2_Detector_Amoebas_Arbol_Analisis.py                     #
+#  README - Programa: Detect_Tree_Amoebas_Analysis.py                          #
 #                                                                              #
 #  - Hecho por: Lic. Marcos Emmanuel Gonzalez Laffitte                         #
 #  - Github: @MarcosLaffitte                                                   #
@@ -15,16 +15,16 @@
 #            Deteccion Computacional de esta Familia de Graficas               #
 #                    y el Caso de los Reemplazos Raros"                        #
 #                                                                              #
-#  - Tesis UNAM:  www...                                                       #
+#  - Tesis UNAM:  [url pendiente]                                              #
 #  - Descripcion: recibe una lista de arboles no nulos y determina entre       #
 #    ellos a las amoebas y no amoebas.                                         #
 #  - Input: Lista de graficas   [Archivo*.g6]   en formato graph6 o g6         #
 #  - Output: tres archivos                                                     #
-#            1) [Archivo*]_arboles_GA.pkl         (solo GA)                    #
-#            2) [Archivo*]_arboles_LAnGA.pkl      (LA y GA)                    #
-#            3) [Archivo*]_arboles_No_Amoeba.pkl  (arboles no amoebas)         #
+#            1) [Archivo*]_trees_GA.pkl         (solo GA)                      #
+#            2) [Archivo*]_trees_LAnGA.pkl      (LA y GA)                      #
+#            3) [Archivo*]_trees_No_Amoeba.pkl  (arboles no amoebas)           #
 #  - Ejecutar como:                                                            #
-#       python3.7  2_Detector_Amoebas_Arbol_Analisis.py  [Archivo*.g6]         #
+#       python3.7  Detect_Tree_Amoebas_Analysis.py  [Archivo*.g6]              #
 #                                                                              #
 #  - Fecha: 22 de abril 2022                                                   #
 #                                                                              #
@@ -440,8 +440,8 @@ outFile.close()
 
 # mensaje resumen
 print("\n")
-print("* Summary - Tot. analyzed graphs: " + str(totalGraficas))
-print("- Tot. analyzed trees: ", len(amoebasGA) + len(amoebasLAnGA) + len(graficasNoAmoeba))
+print("* Summary - Tot. given graphs: " + str(totalGraficas))
+print("- Tot. detected trees: ", len(amoebasGA) + len(amoebasLAnGA) + len(graficasNoAmoeba))
 print("- Global-But-Not-Local Amoeba Trees: ", len(amoebasGA))
 print("- Local-And-Global Amoeba Trees: ", len(amoebasLAnGA))
 print("- Not-Amoeba Trees: ", len(graficasNoAmoeba))

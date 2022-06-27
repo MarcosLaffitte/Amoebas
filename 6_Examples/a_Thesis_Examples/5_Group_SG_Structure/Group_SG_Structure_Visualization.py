@@ -1,6 +1,6 @@
 ################################################################################
 #                                                                              #
-#  README - Programa: 4_Estructura_SG_Visualizacion.py                         #
+#  README - Programa: Group_SG_Structure_Visualization.py                      #
 #                                                                              #
 #  - Hecho por: Lic. Marcos Emmanuel Gonzalez Laffitte                         #
 #  - Github: @MarcosLaffitte                                                   #
@@ -15,23 +15,23 @@
 #            Deteccion Computacional de esta Familia de Graficas               #
 #                    y el Caso de los Reemplazos Raros"                        #
 #                                                                              #
-#  - Tesis UNAM:  www...                                                       #
+#  - Tesis UNAM:  [url pendiente]                                              #
 #  - Descripcion: recibe los 4 archivos de amoebas y graficas producidos por   #
-#    4_Estructura_SG_Analisis.py, y genera (a lo mas) cuatro archivos          #
+#    Group_SG_Structure_Analysis.py, y genera (a lo mas) cuatro archivos       #
 #    con dibujos de todas las graficas dadas.                                  #
 #  - Input:  4 archivos [Archivo*]_grupoSG_[LA/GA/LAnGA/No_Amoeba].pkl         #
 #  - Output: cuatro archivos pdfs con los dibujos de las graficas dadas,       #
-#            1) [Archivo*]_grupoSG_LA.pdf         (solo LA)                    #
-#            2) [Archivo*]_grupoSG_GA.pdf         (solo GA)                    #
-#            3) [Archivo*]_grupoSG_LAnGA.pdf      (LA y GA)                    #
-#            4) [Archivo*]_grupoSG_No_Amoeba.pdf  (graficas no amoebas)        #
+#            1) [Archivo*]_groupSG_LA.pdf         (solo LA)                    #
+#            2) [Archivo*]_groupSG_GA.pdf         (solo GA)                    #
+#            3) [Archivo*]_groupSG_LAnGA.pdf      (LA y GA)                    #
+#            4) [Archivo*]_groupSG_No_Amoeba.pdf  (graficas no amoebas)        #
 #  - Ejecutar como:                                                            #
-#          python3.7  4_Estructura_SG_Visualizacion.py  *.pkl                  #
+#          python3.7  Group_SG_Structure_Visualization.py  *.pkl               #
 #                                                                              #
 #  * en linea de comandos literalmente poner "*.pkl" y python toma todo *.pkl  #
 #  * poniendo solo los 4 archivos *.pkl en la misma carpeta que este script.   #
 #  * los 4 archivos *.pkl deben estar nombrados con el formato de Output de    #
-#    4_Estructura_SG_Analisis.py, de otra forma no se ejecuta el programa.     #
+#    Group_SG_Structure_Analysis.py, de otra forma no se ejecuta el programa.  #
 #                                                                              #
 #  - Fecha: 26 de abril 2022                                                   #
 #  * las variables se nombran con formato estilo java                          #
@@ -199,7 +199,7 @@ def dibujarGraficas(listaDeGraficas, nombreDeArchivo):
         fig = plt.figure(figsize = (80, 80))
         for sub in range(1, graficasPorHoja + 1):
             # obtener datos de grafica actual
-            (nombreG6, orden, tamano, familia, tipo, estructuras)  = listaDeGraficas[actual]
+            (nombreG6, orden, tamano, familia, tipoG, tipoGuK1, estructuras) = listaDeGraficas[actual]
             estSG = estructuras[0]
             estSGRaro = estructuras[1]
             estSGOrd = estructuras[2]
@@ -242,35 +242,35 @@ def dibujarGraficas(listaDeGraficas, nombreDeArchivo):
             nmStr = "(n, m) = " + "(" + str(orden) + "," + str(tamano) + ")"            
             # definir cadena de familia
             if(familia == "LA"):
-                familiaStr = "sólo LA"
+                familiaStr = "only LA"
             if(familia == "GA"):
-                familiaStr = "sólo GA"
+                familiaStr = "only GA"
             if(familia == "LAnGA"):
                 familiaStr = "LA$\cap$GA"
             if(familia == "NO"):
-                familiaStr = "no amoeba"
+                familiaStr = "not amoeba"
             # definir cadenas de grupos
-            if(tipo == "Weird"):
-                estSGStr = "$S_G \cong $ " + estSG
-                estSGRaroStr = "$S_G \cong $ " + estSGRaro
-                estSGOrdStr = "$S_G \cong $ " + estSGOrd
-                estSGuK1Str = "$S_{G{\cup}K_1} \cong $ " + estSGuK1
-                estSGuK1RaroStr = "$S_{G{\cup}K_1} \cong $ " + estSGuK1Raro
-                estSGuK1OrdStr = "$S_{G{\cup}K_1} \cong $ " + estSGuK1Ord
+            if(("Weird" in tipoG) or ("Weird" in tipoGuK1)):
+                estSGStr = "$S_G \cong " + estSG + "$"
+                estSGOrdStr = "$S_G^O \cong " + estSGOrd + "$"
+                estSGRaroStr = "$S_G^R \cong " + estSGRaro + "$"                
+                estSGuK1Str = "$S_{G{\cup}K_1} \cong " + estSGuK1 + "$"
+                estSGuK1OrdStr = "$S_{G{\cup}K_1}^O \cong " + estSGuK1Ord + "$"
+                estSGuK1RaroStr = "$S_{G{\cup}K_1}^R \cong " + estSGuK1Raro + "$"                
             else:
-                estSGStr = "$S_G \cong $ " + estSG
-                estSGRaroStr = estSGRaro
+                estSGStr = "$S_G \cong " + estSG + "$"
                 estSGOrdStr = estSGOrd
-                estSGuK1Str = "$S_{G{\cup}K_1} \cong $ " + estSGuK1
-                estSGuK1RaroStr = estSGuK1Raro
-                estSGuK1OrdStr = estSGuK1Ord                
+                estSGRaroStr = estSGRaro                
+                estSGuK1Str = "$S_{G{\cup}K_1} \cong " + estSGuK1 + "$"
+                estSGuK1OrdStr = estSGuK1Ord
+                estSGuK1RaroStr = estSGuK1Raro                
             # agregar titulo            
             plt.title(nombreG6Str + "\n"
-                      + nmStr + ",    " + familiaStr + ",    " + tipo + "\n"
+                      + nmStr + ",    " + familiaStr + ",    " + tipoG + ",    " + tipoGuK1 + "\n"
                       + "Including Every Replacement: " + estSGStr + ",    " + estSGuK1Str + "\n"
                       + "Without Weird Replacements: " + estSGOrdStr + ",    " + estSGuK1OrdStr + "\n"
                       + "Without Ordinary Replacements: " + estSGRaroStr + ",    " + estSGuK1RaroStr,
-                      fontsize = 28, loc = "left")
+                      fontsize = 28, loc = "left", pad = 12)
             # imprimir avance
             actual = actual + 1
             imprimirAvance(actual*100/len(listaDeGraficas))
