@@ -1,0 +1,34 @@
+The graphs in *raw.pkl files are stored with python pickle package, inside a list of tupples of the form:
+
+> Amoeba Graphs
+  eachAmoeba = (Order, Size, Connected_Or_Not, Amoeba_Family, G6name)
+  where,
+  - Order is int type holding the number of vertices
+  - Size is int type holding the number of edges
+  - Connected_Or_Not is string type with values: "conexa" meaning connected or "disconexa" meaning disconnected
+  - Amoeba_Family is string type with values: "local" meaning only LA, "global" meaning only GA or "ambas" meaning LAnGA
+  - G6name is string type holding the g6 format of the graph 
+
+> Amoeba Trees
+  eachAmoeba = (Order, Size, "conexa", Amoeba_Family, G6name)
+  where,
+  - Order is int type holding the number of vertices
+  - Size is int type holding the number of edges
+  - Amoeba_Family is string type with values: "LA" meaning LAnGA or "GA" meaning only GA
+  - G6name is string type holding the g6 format of the graph 
+
+> Weird Graphs
+  eachGraph = (Order, Size, Connected_Or_Not, Amoeba_Family, Replacements, G6name)
+  where,
+  - Order is int type holding the number of vertices
+  - Size is int type holding the number of edges
+  - Connected_Or_Not is string type with values: "conexa" meaning connected or "disconexa" meaning disconnected
+  - Amoeba_Family is string type with values: "LA" meaning only LA, "GA" meaning only GA, "LAnGA" meaning LAnGA or "NO" meaning not amoeba
+  - Replacements is a list containing two lists [Ordinary_Replacements, Weird_Replacements], both containing edge-replacements
+    as tupples of integers (r, s, k, l) for each replacement rs -> kl of the graph
+  - G6name is string type holding the g6 format of the graph 
+
+***NOTE***
+
+The labels LA and GA in these files differ from the column-labels LA and GA in the tables in the PDF files, since the LA in the tables means
+"local amoeba that may or may not be also global amoeba", and the same for GA.
