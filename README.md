@@ -8,11 +8,11 @@
 ## Developed by
 
 - Lic. Marcos E. González Laffitte<br/>
-  IMATE - UNAM Campus Juriquilla<br/>
+  IMATE - UNAM Campus Juriquilla, México.<br/>
   marcoslaffitte@gmail.com
   
 - Dra. Amanda Montejano Cantoral<br/>
-  UMDI - Facultad de Ciencias - UNAM Campus Juriquila<br/>
+  UMDI - Facultad de Ciencias - UNAM Campus Juriquila, México<br/>
   amandamontejano@ciencias.unam.mx
 
 
