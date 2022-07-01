@@ -18,7 +18,7 @@
 
 ## About
 
-All the programs here can be used to detect amoebas and analyze their properties. This repository was developed as part of the work of Marcos E. González Laffitte's Master Thesis in Mathematics under supervision of Dra. Amanda Montejano Cantoral.
+Amoebas are a family of simple graphs first defined by Adriana Hansberg, Yair Caro and Amanda Montejano, who initially studied them in the context of Ramsey-Turán Theory \textcolor{coolblack}{\textbf{[1, 2]}}. The study of these graphs is of interest, in particular, due to its relation with the graph isomorphism problem. All the programs here can be used to detect amoebas and analyze their properties. This repository was developed as part of the work of Marcos E. González Laffitte's Master Thesis in Mathematics under supervision of Dra. Amanda Montejano Cantoral.<br/>
 
 
 ## Instructions
@@ -36,21 +36,18 @@ https://doi.org/10.48550/arXiv.2007.11769
 [2] Yair Caro, Adriana Hansberg, Amanda Montejano, "Unavoidable chromatic patterns in 2-colorings of the complete graph". Journal of Graph Theory, 2021, vol. 97, pages 123-147.<br/>
 https://onlinelibrary.wiley.com/doi/abs/10.1002/jgt.22645
 
-[3] Jennifer Lilith Espinosa Hernández, "Gráficas Inevitables en 2-coloraciones de la Gráfica Completa: El Caso de las Amoebas", Tesis de Licenciatura en Matemáticas, UNAM. Directora de Tesis: Dra. Adriana Hansberg Pastor, p. 79, 2021.<br/>
-http://132.248.9.195/ptd2021/junio/0812763/Index.html
-
 #### Graphs and Trees Database - Last visited on: June 10th, 2022
 
-[4] Main page: Combinatorial Data - Prof. Brendan D. McKay, School of Computing, Australian National University.<br/>
+[3] Main page: Combinatorial Data - Prof. Brendan D. McKay, School of Computing, Australian National University.<br/>
 https://users.cecs.anu.edu.au/~bdm/data/
 
-[5] Simple Graphs having from 1 to 10 vertices where obtained from: Graphs Page - Prof. Brendan D. McKay, School of Computing, Australian National University.<br/>
+[4] Simple Graphs having from 1 to 10 vertices where obtained from: Graphs Page - Prof. Brendan D. McKay, School of Computing, Australian National University.<br/>
 https://users.cecs.anu.edu.au/~bdm/data/graphs.html
 
-[6] Trees having from 1 to 22 vertices where obtained from: Trees Page - Prof. Brendan D. McKay, School of Computing, Australian National University.<br/>
+[5] Trees having from 1 to 22 vertices where obtained from: Trees Page - Prof. Brendan D. McKay, School of Computing, Australian National University.<br/>
 https://users.cecs.anu.edu.au/~bdm/data/trees.html
 
-[7] Definition of graph6 encoding - Prof. Brendan D. McKay, School of Computing, Australian National University.<br/>
+[6] Definition of graph6 encoding - Prof. Brendan D. McKay, School of Computing, Australian National University.<br/>
 https://users.cecs.anu.edu.au/~bdm/data/formats.txt
 
 
