@@ -33,7 +33,7 @@ All the programs here can be used to detect amoebas and analyze their properties
 [1] Yair Caro, Adriana Hansberg, Amanda Montejano, "Graphs isomorphisms under edge-replacements and the family of amoebas", p. 33, 2021.<br/>
 https://doi.org/10.48550/arXiv.2007.11769
 
-[2] Yair Caro, Adriana Hansberg, Amanda Montejano, "Unavoidable chromatic patterns in 2-colorings of the complete graph". Journal of Graph Theory, pages 123-147, Vol. 97, 2021.<br/>
+[2] Yair Caro, Adriana Hansberg, Amanda Montejano, "Unavoidable chromatic patterns in 2-colorings of the complete graph". Journal of Graph Theory, 2021, vol. 97, pages 123-147.<br/>
 https://onlinelibrary.wiley.com/doi/abs/10.1002/jgt.22645
 
 [3] Jennifer Lilith Espinosa Hernández, "Gráficas Inevitables en 2-coloraciones de la Gráfica Completa: El Caso de las Amoebas", Tesis de Licenciatura en Matemáticas, UNAM. Directora de Tesis: Dra. Adriana Hansberg Pastor, p. 79, 2021.<br/>
