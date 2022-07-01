@@ -1,7 +1,9 @@
 # Welcome to the Repo
 
 <p align="center">
-  <img src="./7_Readme_Pics/C3.gif" width="180"/><img src="./7_Readme_Pics/RepoTitle.png" width="300"/><img src="./7_Readme_Pics/P4.gif" width="180"/>
+  <img src="./7_Readme_Pics/C3.gif" width="180"/><br/>
+  <img src="./7_Readme_Pics/RepoTitle.png" width="300"/><br/>
+  <img src="./7_Readme_Pics/P4.gif" width="180"/><br/>
 </p>
 
 
