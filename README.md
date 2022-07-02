@@ -44,13 +44,13 @@ https://onlinelibrary.wiley.com/doi/abs/10.1002/jgt.22645
 
 #### Graphs and Trees Database - Last visited on: June 10th, 2022
 
-[3] Main page: Combinatorial Data - Prof. Brendan D. McKay, School of Computing, Australian National University.<br/>
+[3] Main page of visited database: Combinatorial Data - Prof. Brendan D. McKay, School of Computing, Australian National University.<br/>
 https://users.cecs.anu.edu.au/~bdm/data/
 
-[4] Simple Graphs having from 1 to 10 vertices where obtained from: Graphs Page - Prof. Brendan D. McKay, School of Computing, Australian National University.<br/>
+[4] Simple Graphs having from 1 and up to 10 vertices where obtained from: Graphs Page - Prof. Brendan D. McKay, School of Computing, Australian National University.<br/>
 https://users.cecs.anu.edu.au/~bdm/data/graphs.html
 
-[5] Trees having from 1 to 22 vertices where obtained from: Trees Page - Prof. Brendan D. McKay, School of Computing, Australian National University.<br/>
+[5] Trees having from 1 and up to 22 vertices where obtained from: Trees Page - Prof. Brendan D. McKay, School of Computing, Australian National University.<br/>
 https://users.cecs.anu.edu.au/~bdm/data/trees.html
 
 [6] Definition of graph6 encoding - Prof. Brendan D. McKay, School of Computing, Australian National University.<br/>
