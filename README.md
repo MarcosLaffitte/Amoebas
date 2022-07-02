@@ -42,9 +42,9 @@ https://doi.org/10.48550/arXiv.2007.11769
 [2] Yair Caro, Adriana Hansberg, Amanda Montejano, "Unavoidable chromatic patterns in 2-colorings of the complete graph". Journal of Graph Theory, 2021, vol. 97, pages 123-147.<br/>
 https://onlinelibrary.wiley.com/doi/abs/10.1002/jgt.22645
 
-#### Graphs and Trees Database - Last visited on: June 10th, 2022
+#### Used Database of Graphs and Trees - Last visited on: June 10th, 2022
 
-[3] Main page of visited database: Combinatorial Data - Prof. Brendan D. McKay, School of Computing, Australian National University.<br/>
+[3] Main page: Combinatorial Data - Prof. Brendan D. McKay, School of Computing, Australian National University.<br/>
 https://users.cecs.anu.edu.au/~bdm/data/
 
 [4] Simple Graphs having from 1 and up to 10 vertices where obtained from: Graphs Page - Prof. Brendan D. McKay, School of Computing, Australian National University.<br/>
