@@ -23,7 +23,7 @@ Amoebas are a family of simple graphs first defined by Adriana Hansberg, Yair Ca
 
 ## Instructions
 
-The directories/folders numbered from 1 to 5 contain each two Python scripts that can be used to detect and analyze different properties of amoebas, as shown in the Instruction_Manual.pdf included in this repository (please find below a direct link to it).<br/>
+The directories / folders numbered from 1 to 5 contain each two Python scripts that can be used to detect and analyze different properties of amoebas, as shown in the Instruction_Manual.pdf included in this repository (please find below a direct link to it).<br/>
 
 On the other hand, the folder 6_Examples contains the results of three different analyses: one over the set of graphs named Thesis_Examples.g6, other over the set of all non-isomorphic graphs having from 1 and up to 7 vertices, and finally a collection of results developed over bigger sets of graphs, especifically over all the non-isomorphic graphs having from 1 and up to 10 vertices, as well as over all the non-isomorphic trees having from 1 and up to 22 vertices.<br/>
 
