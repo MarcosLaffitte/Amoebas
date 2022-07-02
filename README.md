@@ -23,8 +23,7 @@ Amoebas are a family of simple graphs first defined by Adriana Hansberg, Yair Ca
 
 ## Instructions
 
-> Please find the detailed instruction manual <a href="./Instruction_Manual.pdf">here</a>.
-
+> Please find <a href="./Instruction_Manual.pdf">here</a> the detailed instruction manual for the programs in this repo.<br/>
 
 
 ## References
