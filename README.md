@@ -1,7 +1,7 @@
 # Welcome to the Repo
 
 <p align="center">
-  <img src="./7_Readme_Pics/C3.gif" width="180"/><img src="./7_Readme_Pics/RepoTitle.png" width="300"/><img src="./7_Readme_Pics/P4.gif" width="180"/>
+<img src="./7_Readme_Pics/C3.gif" width="180"/><img src="./7_Readme_Pics/RepoTitle.png" width="300"/><img src="./7_Readme_Pics/P4.gif" width="180"/>
 </p>
 
 
@@ -18,12 +18,16 @@
 
 ## About
 
+<p align="justify">
 Amoebas are a family of simple graphs first defined by Adriana Hansberg, Yair Caro and Amanda Montejano, who initially studied them in the context of Ramsey-Turán Theory [1, 2]. The study of these graphs is of interest, in particular, due to its relation with the graph isomorphism problem. All the programs here can be used to detect amoebas and analyze their properties. This repository was developed as part of the work of Marcos E. González Laffitte's Master Thesis in Mathematics under supervision of Dra. Amanda Montejano Cantoral.<br/>
+</p>
 
 
 ## Instructions
 
+<p align="justify">	
 All the directories / folders numbered from 1 to 5 contain each two Python scripts that can be used to detect and analyze different properties of amoebas, as shown in the Instruction_Manual.pdf included in this repository (please find below a direct link to it). On the other hand, the folder 6_Examples contains the results of three different analyses: one over the set of graphs named Thesis_Examples.g6, other over the set of all non-isomorphic graphs having from 1 and up to 7 vertices, and finally a collection of the results obtained for bigger sets of graphs, especifically over all the non-isomorphic graphs having from 1 and up to 10 vertices, as well as over all the non-isomorphic trees having from 1 and up to 22 vertices. Please take into account that some of these last pdf files are large, and therefore should be downloaded in order to be visualized properly.<br/>
+</p>
 
 > Please find <a href="./Instruction_Manual.pdf">here</a> the detailed instruction manual for the programs in this repo.<br/>
 
