@@ -19,7 +19,7 @@
 ## About
 
 <p align="justify">
-Amoebas are a family of simple graphs first defined by Adriana Hansberg, Yair Caro and Amanda Montejano, who initially studied them in the context of Ramsey-Turán Theory [1, 2]. The study of these graphs is of interest, in particular, due to its relation with the graph isomorphism problem. All the programs here can be used to detect amoebas and analyze their properties. This repository was developed as part of the work of Marcos E. González Laffitte's Master Thesis in Mathematics under supervision of Dra. Amanda Montejano Cantoral.<br/>
+Amoebas are a family of simple graphs first defined by Adriana Hansberg, Yair Caro and Amanda Montejano, who initially studied them in the context of Ramsey-Turán Theory [1, 2]. The study of these graphs is of interest, in particular, due to its relation with the graph isomorphism problem. All the programs here can be used to detect amoebas and analyze their properties. This repository was developed as part of the work of Marcos E. González Laffitte's Master Thesis in Mathematics [3] under supervision of Dra. Amanda Montejano Cantoral.<br/>
 </p>
 
 
@@ -41,6 +41,10 @@ https://doi.org/10.48550/arXiv.2007.11769
 
 [2] Yair Caro, Adriana Hansberg, Amanda Montejano, "Unavoidable chromatic patterns in 2-colorings of the complete graph". Journal of Graph Theory, 2021, vol. 97, pages 123-147.<br/>
 https://onlinelibrary.wiley.com/doi/abs/10.1002/jgt.22645
+
+[3] Marcos Emmanuel González Laffitte, Tesis de Maestría en Ciencias Matemáticas, UNAM, "Estudio de Amoebas y sus Propiedades: Detección Computacional de esta Familia de Gráficas y el Caso de los Reemplazos Raros", p. 111, 2022. Complete text Available in Spanish at: <br/>
+https://tesiunam.dgb.unam.mx/F/A3KSIMKYY39UDVDRSIMD7BHG7QREPSRCC92KX2EHLJY7I23F3F-05602?func=full-set-set&set_number=712429&set_entry=000001&format=999
+
 
 #### Used Database of Graphs and Trees - Last visited on: June 10th, 2022
 
