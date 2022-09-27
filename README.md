@@ -43,7 +43,8 @@ https://doi.org/10.48550/arXiv.2007.11769
 https://onlinelibrary.wiley.com/doi/abs/10.1002/jgt.22645
 
 [3] Marcos Emmanuel González Laffitte, Tesis de Maestría en Ciencias Matemáticas, UNAM, "Estudio de Amoebas y sus Propiedades: Detección Computacional de esta Familia de Gráficas y el Caso de los Reemplazos Raros", p. 111, 2022. Complete text Available in Spanish at: <br/>
-https://tesiunam.dgb.unam.mx/F/A3KSIMKYY39UDVDRSIMD7BHG7QREPSRCC92KX2EHLJY7I23F3F-05602?func=full-set-set&set_number=712429&set_entry=000001&format=999
+http://132.248.9.195/ptd2022/septiembre/0831065/Index.html
+
 
 #### Used Database of Graphs and Trees - Last visited on: June 10th, 2022
 
