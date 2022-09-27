@@ -45,21 +45,16 @@ https://onlinelibrary.wiley.com/doi/abs/10.1002/jgt.22645
 [3] Marcos Emmanuel González Laffitte, Tesis de Maestría en Ciencias Matemáticas, UNAM, "Estudio de Amoebas y sus Propiedades: Detección Computacional de esta Familia de Gráficas y el Caso de los Reemplazos Raros", p. 111, 2022. Complete text Available in Spanish at: <br/>
 https://tesiunam.dgb.unam.mx/F/A3KSIMKYY39UDVDRSIMD7BHG7QREPSRCC92KX2EHLJY7I23F3F-05602?func=full-set-set&set_number=712429&set_entry=000001&format=999
 
-
 #### Used Database of Graphs and Trees - Last visited on: June 10th, 2022
 
-[3] Main page: Combinatorial Data - Prof. Brendan D. McKay, School of Computing, Australian National University.<br/>
+[4] Main page: Combinatorial Data - Prof. Brendan D. McKay, School of Computing, Australian National University.<br/>
 https://users.cecs.anu.edu.au/~bdm/data/
 
-[4] Simple Graphs having from 1 and up to 10 vertices where obtained from: Graphs Page - Prof. Brendan D. McKay, School of Computing, Australian National University.<br/>
+[5] Simple Graphs having from 1 and up to 10 vertices where obtained from: Graphs Page - Prof. Brendan D. McKay, School of Computing, Australian National University.<br/>
 https://users.cecs.anu.edu.au/~bdm/data/graphs.html
 
-[5] Trees having from 1 and up to 22 vertices where obtained from: Trees Page - Prof. Brendan D. McKay, School of Computing, Australian National University.<br/>
+[6] Trees having from 1 and up to 22 vertices where obtained from: Trees Page - Prof. Brendan D. McKay, School of Computing, Australian National University.<br/>
 https://users.cecs.anu.edu.au/~bdm/data/trees.html
 
-[6] Definition of graph6 encoding - Prof. Brendan D. McKay, School of Computing, Australian National University.<br/>
+[7] Definition of graph6 encoding - Prof. Brendan D. McKay, School of Computing, Australian National University.<br/>
 https://users.cecs.anu.edu.au/~bdm/data/formats.txt
-
-
-
-
