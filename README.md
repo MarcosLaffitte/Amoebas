@@ -50,10 +50,10 @@ https://tesiunam.dgb.unam.mx/F/A3KSIMKYY39UDVDRSIMD7BHG7QREPSRCC92KX2EHLJY7I23F3
 [4] Main page: Combinatorial Data - Prof. Brendan D. McKay, School of Computing, Australian National University.<br/>
 https://users.cecs.anu.edu.au/~bdm/data/
 
-[5] Simple Graphs having from 1 and up to 10 vertices where obtained from: Graphs Page - Prof. Brendan D. McKay, School of Computing, Australian National University.<br/>
+[5] Simple Graphs having from 1 and up to 10 vertices were obtained from: Graphs Page - Prof. Brendan D. McKay, School of Computing, Australian National University.<br/>
 https://users.cecs.anu.edu.au/~bdm/data/graphs.html
 
-[6] Trees having from 1 and up to 22 vertices where obtained from: Trees Page - Prof. Brendan D. McKay, School of Computing, Australian National University.<br/>
+[6] Trees having from 1 and up to 22 vertices were obtained from: Trees Page - Prof. Brendan D. McKay, School of Computing, Australian National University.<br/>
 https://users.cecs.anu.edu.au/~bdm/data/trees.html
 
 [7] Definition of graph6 encoding - Prof. Brendan D. McKay, School of Computing, Australian National University.<br/>
