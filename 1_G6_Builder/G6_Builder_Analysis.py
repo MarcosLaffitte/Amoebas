@@ -2,7 +2,7 @@
 #                                                                              #
 #  README - Programa: G6_Builder_Analysis.py                                   #
 #                                                                              #
-#  - Hecho por: Lic. Marcos Emmanuel Gonzalez Laffitte                         #
+#  - Hecho por: Mtr. Marcos Emmanuel Gonzalez Laffitte                         #
 #  - Github: @MarcosLaffitte                                                   #
 #  - Repositiorio:  https://github.com/MarcosLaffitte/Amoebas                  #
 #  - Universidad Nacional Autonoma de Mexico (UNAM)                            #
@@ -15,7 +15,7 @@
 #            Deteccion Computacional de esta Familia de Graficas               #
 #                    y el Caso de los Reemplazos Raros"                        #
 #                                                                              #
-#  - Tesis UNAM:  [url pendiente]                                              #
+#  - Tesis UNAM: http://132.248.9.195/ptd2022/septiembre/0831065/Index.html    #
 #  - Descripcion: crea una lista de cadenas G6 que representan graficas        #
 #    simples en dhico formato.                                                 #
 #  - Input: Definido por el usuario dentro del programa. Se pueden agregar     #

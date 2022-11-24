@@ -2,7 +2,7 @@
 #                                                                              #
 #  README - Programa: Group_SG_Structure_Analysis.py                           #
 #                                                                              #
-#  - Hecho por: Lic. Marcos Emmanuel Gonzalez Laffitte                         #
+#  - Hecho por: Mtr. Marcos Emmanuel Gonzalez Laffitte                         #
 #  - Github: @MarcosLaffitte                                                   #
 #  - Repositiorio:  https://github.com/MarcosLaffitte/Amoebas                  #
 #  - Universidad Nacional Autonoma de Mexico (UNAM)                            #
@@ -15,7 +15,7 @@
 #            Deteccion Computacional de esta Familia de Graficas               #
 #                    y el Caso de los Reemplazos Raros"                        #
 #                                                                              #
-#  - Tesis UNAM:  [url pendiente]                                              #
+#  - Tesis UNAM: http://132.248.9.195/ptd2022/septiembre/0831065/Index.html    #
 #  - Descripcion: recibe una lista de graficas arbitrarias simples no nulas y  #
 #    determina las amoebas y no amoebas, junto con la estructura de los grupos #
 #    S_G y S_GuK1 de cada grafica G en la lista por medio de SageMath.         #

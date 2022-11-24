@@ -7,7 +7,7 @@
 
 ## Developed by
 
-- Lic. Marcos E. González Laffitte<br/>
+- Mtr. Marcos E. González Laffitte<br/>
   IMATE - UNAM Campus Juriquilla, México.<br/>
   marcoslaffitte@gmail.com
   

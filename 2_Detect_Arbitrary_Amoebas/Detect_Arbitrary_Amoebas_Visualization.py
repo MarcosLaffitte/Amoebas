@@ -2,7 +2,7 @@
 #                                                                              #
 #  README - Programa: Detect_Arbitrary_Amoebas_Visualization.py                #
 #                                                                              #
-#  - Hecho por: Lic. Marcos Emmanuel Gonzalez Laffitte                         #
+#  - Hecho por: Mtr. Marcos Emmanuel Gonzalez Laffitte                         #
 #  - Github: @MarcosLaffitte                                                   #
 #  - Repositiorio:  https://github.com/MarcosLaffitte/Amoebas                  #
 #  - Universidad Nacional Autonoma de Mexico (UNAM)                            #
@@ -15,7 +15,7 @@
 #            Deteccion Computacional de esta Familia de Graficas               #
 #                    y el Caso de los Reemplazos Raros"                        #
 #                                                                              #
-#  - Tesis UNAM:  [url pendiente]                                              #
+#  - Tesis UNAM: http://132.248.9.195/ptd2022/septiembre/0831065/Index.html    #
 #  - Descripcion: recibe los 4 archivos de amoebas y graficas producidos por   #
 #    Detect_Arbitrary_Amoebas_Analysis.py, y genera (a lo mas) cuatro          #
 #    archivos con dibujos de todas las graficas dadas.                         #
