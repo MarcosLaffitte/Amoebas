@@ -26,7 +26,7 @@ Amoebas are a family of simple graphs first defined by Adriana Hansberg, Yair Ca
 ## Description
 
 <p align="justify">
-   Here we provide two different implementations of the same algorithm. If you wish to analyze only one graph, you can make use of the script Amoebas_Standalone.py in this repository. You can fond the instructions on how to use this below. On the other hand, if you want to analyze a big batch of graphs you would need to use the scripts in the other folders. For instructions on this keep reading this section.
+   Here we provide two different implementations of the same algorithm. If you wish to analyze only one graph, you can make use of the script Amoebas_Standalone.py in this repository. You can find the instructions on how to use this below. On the other hand, if you want to analyze a big batch of graphs you would need to use the scripts in the other folders. For instructions on this keep reading this section.
 </p>
 
 
