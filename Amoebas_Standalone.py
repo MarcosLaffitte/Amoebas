@@ -18,6 +18,7 @@
 #  - Tesis UNAM: http://132.248.9.195/ptd2022/septiembre/0831065/Index.html    #
 #  - Descripcion: recibe una graficas en codigo y determina si esta es amoeba  #
 #    local y/o global, o bien si no es amoeba.                                 #
+#                                                                              #
 #  - Ejecutar como:                                                            #
 #                      python  Amoebas_Standalone.py                           #
 #                                                                              #
