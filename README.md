@@ -29,15 +29,47 @@ Amoebas are a family of simple graphs first defined by Adriana Hansberg, Yair Ca
    Here we provide two different implementations of the same algorithm. If you wish to analyze only one graph, you can make use of the script Amoebas_Standalone.py in this repository. You can find the instructions on how to use this below. On the other hand, if you want to analyze a big batch of graphs you would need to use the scripts in the other folders. For instructions on this keep reading this section.
 </p>
 
-
 <p align="justify">
 All the directories / folders numbered from 1 to 5 contain each two Python scripts that can be used to detect and analyze different properties of amoebas, as shown in the Instruction_Manual.pdf included in this repository (please find below a direct link to it). On the other hand, the folder 6_Examples contains the results of three different analyses: one over the set of graphs named Thesis_Examples.g6, other over the set of all non-isomorphic graphs having from 1 and up to 7 vertices, and finally a collection of the results obtained for bigger sets of graphs, specifically over all the non-isomorphic graphs having from 1 and up to 10 vertices, as well as over all the non-isomorphic trees having from 1 and up to 22 vertices. Please take into account that some of these last pdf files are large, and therefore should be downloaded in order to be visualized properly.<br/>
 </p>
 
 > Please find <a href="./Instruction_Manual.pdf">here</a> the detailed instruction manual for the programs in this repo.<br/>
 
+
+## Cite as
+
+This repository was also developed as part of the contribution:
+
+**[1]**   Marcos E. González Laffitte, J. René González-Martínez, Amanda Montejano, On the detection of local and global amoebas: theoretical insights and practical algorithms (Brief Announcement). *Procedia Computer Science* **223** (2023) pp. 376-378.
+> **Link:** https://doi.org/10.1016/j.procs.2023.08.252
+
+<div align="justify">
+This work was developed for research purposes. Please cite as above if you find this work or these programs useful for your own research.
+</div>
+<br/>
+
+
 ## Instructions for the Stand-alone script
 
+###### In order to run the script Amoebas_Standalone.py you will require some python packages. You can install them directly into a new anaconda environment as follows:
+
+```
+conda create -n amoebas networkx matplotlib sympy
+```
+###### Then activate the amoebas conda environment:
+```
+conda activate amoebas
+```
+###### And execute the program with:
+```
+python  Amoebas_Standalone.py
+```
+
+###### Remember to always activate the eequaam conda environment before using the programs in this repository.
+
+<p align="justify">
+The input graph can be modified IN-CODE, i.e., inside the script. This is done in this way since determining a whole graph depends heavily on each user's data-representation. This can be build in the script by specifying the edges of the graph as a NetworkX object [8]. The script will produce a PDF with a plot of the graph stating if it is indeed an amoeba and its type (local and/or global), or if it is not an amoeba.<br/>
+</p>
 
 
 ## References
@@ -67,3 +99,7 @@ https://users.cecs.anu.edu.au/~bdm/data/trees.html
 
 [7] Definition of graph6 encoding - Prof. Brendan D. McKay, School of Computing, Australian National University.<br/>
 https://users.cecs.anu.edu.au/~bdm/data/formats.txt
+
+
+#### NetworkX - Last visited on: July 23th, 2024
+[8] https://networkx.org/
