@@ -38,7 +38,7 @@ All the directories / folders numbered from 1 to 5 contain each two Python scrip
 
 ## Cite as
 
-This repository was also developed as part of the contribution:
+This repository was developed as part of the contribution:
 
 **[8]**   Marcos E. González Laffitte, J. René González-Martínez, Amanda Montejano, On the detection of local and global amoebas: theoretical insights and practical algorithms (Brief Announcement). *Procedia Computer Science* **223** (2023) pp. 376-378.
 > **Link:** https://doi.org/10.1016/j.procs.2023.08.252
