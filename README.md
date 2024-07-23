@@ -23,13 +23,21 @@ Amoebas are a family of simple graphs first defined by Adriana Hansberg, Yair Ca
 </p>
 
 
-## Instructions
+## Description
 
-<p align="justify">	
+<p align="justify">
+   Here we provide two different implementations of the same algorithm. If you wish to analyze only one graph, you can make use of the script Amoebas_Standalone.py in this repository. You can fond the instructions on how to use this below. On the other hand, if you want to analyze a big batch of graphs you would need to use the scripts in the other folders. For instructions on this keep reading this section.
+</p>
+
+
+<p align="justify">
 All the directories / folders numbered from 1 to 5 contain each two Python scripts that can be used to detect and analyze different properties of amoebas, as shown in the Instruction_Manual.pdf included in this repository (please find below a direct link to it). On the other hand, the folder 6_Examples contains the results of three different analyses: one over the set of graphs named Thesis_Examples.g6, other over the set of all non-isomorphic graphs having from 1 and up to 7 vertices, and finally a collection of the results obtained for bigger sets of graphs, specifically over all the non-isomorphic graphs having from 1 and up to 10 vertices, as well as over all the non-isomorphic trees having from 1 and up to 22 vertices. Please take into account that some of these last pdf files are large, and therefore should be downloaded in order to be visualized properly.<br/>
 </p>
 
 > Please find <a href="./Instruction_Manual.pdf">here</a> the detailed instruction manual for the programs in this repo.<br/>
+
+## Instructions for the Stand-alone script
+
 
 
 ## References
