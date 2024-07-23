@@ -67,7 +67,7 @@ python  Amoebas_Standalone.py
 
 ###### Remember to always activate the amoebas conda environment before using this script.
 
-###### The input graph can be modified IN-CODE, i.e., inside the script. This is done in this way since determining a whole graph depends heavily on each user's data-representation. This can be build in the script by specifying the edges of the graph as a NetworkX object [8]. The script will produce a PDF with a plot of the graph stating if it is indeed an amoeba and its type (local and/or global), or if it is not an amoeba.
+###### The input graph can be modified IN-CODE, i.e., inside the script. This is done in this way since determining a whole graph depends heavily on each user's data-representation. The graph can be built in the script as a NetworkX object [8] by specifying its edges. The script will produce a PDF with a plot of the graph stating if it is indeed an amoeba and its type (local and/or global), or if it is not an amoeba.
 
 ###### IMPORTANT: the other scripts in the repository require the Sage Math for python, which you have to install through Anaconda: https://doc.sagemath.org/html/en/installation/conda.html. Nonetheless Amoebas_Standalone.py only requires the packages in the environment as installed above.
 
