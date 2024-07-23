@@ -19,7 +19,7 @@
 ## About
 
 <p align="justify">
-Amoebas are a family of simple graphs first defined by Adriana Hansberg, Yair Caro and Amanda Montejano, who initially studied them in the context of Ramsey-Turán Theory [1, 2]. The study of these graphs is of interest, in particular, due to its relation with the graph isomorphism problem. All the programs here can be used to detect amoebas and analyze their properties. This repository was developed as part of the work of Marcos E. González Laffitte's Master Thesis in Mathematics [3] under supervision of Dra. Amanda Montejano Cantoral.<br/>
+Amoebas are a family of simple graphs first defined by Adriana Hansberg, Yair Caro and Amanda Montejano, who initially studied them in the context of Ramsey-Turán Theory [1, 2]. The study of these graphs is of interest, in particular, due to its relation with the graph isomorphism problem. All the programs here can be used to detect amoebas and analyze their properties. This repository was developed as part of the contribution in [8] and of the work of Marcos E. González Laffitte's Master Thesis in Mathematics [3] under supervision of Dra. Amanda Montejano Cantoral.<br/>
 </p>
 
 
@@ -40,7 +40,7 @@ All the directories / folders numbered from 1 to 5 contain each two Python scrip
 
 This repository was also developed as part of the contribution:
 
-**[1]**   Marcos E. González Laffitte, J. René González-Martínez, Amanda Montejano, On the detection of local and global amoebas: theoretical insights and practical algorithms (Brief Announcement). *Procedia Computer Science* **223** (2023) pp. 376-378.
+**[8]**   Marcos E. González Laffitte, J. René González-Martínez, Amanda Montejano, On the detection of local and global amoebas: theoretical insights and practical algorithms (Brief Announcement). *Procedia Computer Science* **223** (2023) pp. 376-378.
 > **Link:** https://doi.org/10.1016/j.procs.2023.08.252
 
 <div align="justify">
@@ -67,7 +67,7 @@ python  Amoebas_Standalone.py
 
 ###### Remember to always activate the amoebas conda environment before using this script.
 
-###### The input graph can be modified IN-CODE, i.e., inside the script. This is done in this way since determining a whole graph depends heavily on each user's data-representation. The graph can be built in the script as a NetworkX object [8] by specifying its edges. The script will produce a PDF with a plot of the graph stating if it is indeed an amoeba and its type (local and/or global), or if it is not an amoeba.
+###### The input graph can be modified IN-CODE, i.e., inside the script. This is done in this way since determining a whole graph depends heavily on each user's data-representation. The graph can be built in the script as a NetworkX object [9] by specifying its edges. The script will produce a PDF with a plot of the graph stating if it is indeed an amoeba and its type (local and/or global), or if it is not an amoeba.
 
 ###### IMPORTANT: the other scripts in the repository require the Sage Math for python, which you have to install through Anaconda: https://doc.sagemath.org/html/en/installation/conda.html. Nonetheless Amoebas_Standalone.py only requires the packages in the environment as installed above.
 
@@ -101,5 +101,9 @@ https://users.cecs.anu.edu.au/~bdm/data/trees.html
 https://users.cecs.anu.edu.au/~bdm/data/formats.txt
 
 
+#### Contribution
+[8] Marcos E. González Laffitte, J. René González-Martínez, Amanda Montejano, On the detection of local and global amoebas: theoretical insights and practical algorithms (Brief Announcement). *Procedia Computer Science* **223** (2023) pp. 376-378. **Link:** https://doi.org/10.1016/j.procs.2023.08.252
+
+
 #### NetworkX - Last visited on: July 23th, 2024
-[8] https://networkx.org/
+[9] https://networkx.org/
